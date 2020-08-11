@@ -3,10 +3,23 @@
 
 <head>
     <title> Practice Me </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/all.min.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 80vh;
+        }
+        </style>
 </head>
 
 <body>
@@ -40,30 +53,45 @@
             <li class="item"><a href="#">Contact</a></li>
             </li>
             <li class="item button"><a href="#">Log In</a></li>
-            <li class="item button secondary"><a href="#">Sign In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
             <span class="toggle"><a href="#"><i class="fas fa-bars"></i></a></span>
         </ul>
     </nav>
-     <main class="maint"> 
+    <br>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/AvataR.jpg" alt="AvataR">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/Avatar1.jpg" alt="Avartar1">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/images(5).jpg" alt="image5">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+     <main class="maint">
         <div class="search-icon"> 
             <input type="text" placeholder="Search Avatar"  name="search-q" id="Search-icon"> <i  class="fa fa-search" id="search-icon" aria-hidden="true">&nbsp;</i><span style="color: #0071eb;<i class="fa fa-search" aria-hidden="true"></i>Search</span>
         </div>
-        <hr>
-        <div class="Avatar-photos" style="display: flex; width: 50%; margin-left:5%; flex-wrap:;">
-          <div class="avimages">
-             <center> <img src="Images/AvataR.jpg" alt="Image of Avatar" height="300" width="400">
-             </div>&nbsp;</center>
-          <div class="avimages">
-              <center>
-                <img src="Images/images (5).jpg" alt="Image of Avatar" height="300" width="400"></center>
-          </div>&nbsp;
-          <div class="avimages">
-              <center>
-                  <img src="Images/Avatar1.jpg" alt="Image of Avatar" height="300" width="400">
-              </center>
-          </div>
-        </div>
-        <br>
         <div class="fluid container">
             <div class="row">
                 <div class="col-md-12">
@@ -130,12 +158,10 @@
                             <a href="#subscribe" class="btn btn-danger">Discard</a>
                         </div>
                     </form>
-                    <br>
-                     <div id="subscribe">
-                        <a href="#">Subscribe</a>
-                    </div>
             </div>
         </div>
+        <br>
+        <br>
     </main>
 </body>
 
